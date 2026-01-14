@@ -13,7 +13,7 @@ import {
  * - mint iniziale = UP (contract address)
  * - solo l'UP può fare set metadata / freeze (onlyOwner)
  */
-contract First10Purchases2026 is LSP7DigitalAsset {
+contract First10Purchases2026_V2 is LSP7DigitalAsset {
   uint256 public constant MAX_SUPPLY = 10;
 
   bool public metadataFrozen;
