@@ -1,0 +1,17 @@
+# Secrets
+.env
+.env.*
+
+# Node / Hardhat
+node_modules/
+artifacts/
+cache/
+typechain/
+coverage/
+
+# Logs / OS
+*.log
+.DS_Store
+
+# Local outputs
+standard-json-input.json
