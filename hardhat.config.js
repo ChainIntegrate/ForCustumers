@@ -1,3 +1,4 @@
+// hardhat.config.js
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
@@ -13,11 +14,20 @@ module.exports = {
     settings: { optimizer: { enabled: true, runs: 200 } },
   },
   networks: {
+    // LUKSO Testnet
     luksoTestnet: {
       url: process.env.LUKSO_TESTNET_RPC || "https://rpc.testnet.lukso.network",
       chainId: Number(process.env.LUKSO_TESTNET_CHAIN_ID || "4201"),
       accounts: accounts(),
     },
+
+    // LUKSO Mainnet
+    luksoMainnet: {
+      url: process.env.LUKSO_MAINNET_RPC || "https://rpc.mainnet.lukso.network",
+      chainId: Number(process.env.LUKSO_MAINNET_CHAIN_ID || "42"),
+      accounts: accounts(),
+    },
   },
 };
+
 
