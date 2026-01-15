@@ -1,7 +1,7 @@
 {
   "name": "first10-2026-lsp7",
   "version": "1.0.0",
-  "description": "",
+  "description": "**ForBirra20Venti** is the smart contract repository for the **Birra20Venti** project, developed within the **ChainIntegrate** ecosystem.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,10 +12,20 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^3.0.0",
     "dotenv": "^17.2.3",
+    "ethers": "^6.16.0",
     "hardhat": "^2.28.3"
   },
   "dependencies": {
     "@erc725/smart-contracts": "^8.0.1",
     "@lukso/lsp-smart-contracts": "^0.16.7"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChainIntegrate/ForBirra20Venti.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ChainIntegrate/ForBirra20Venti/issues"
+  },
+  "homepage": "https://github.com/ChainIntegrate/ForBirra20Venti#readme"
 }

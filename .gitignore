@@ -15,3 +15,7 @@ coverage/
 
 # Local outputs
 standard-json-input.json
+standard-json-v3.json
+
+# Deprecated scripts
+scripts/transfer_from_up.js
