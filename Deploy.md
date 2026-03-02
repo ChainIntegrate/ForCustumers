@@ -278,7 +278,7 @@ Scale: 0–1000
 
 ## Deployment (Mainnet)
 
-- **Contract:** *(insert Rev1 address if retained)*
+- **Contract:** `0x178fB52846be371C2fAB9CEA0Af4FBcB5aDfc4c0`
 - **Owner:** `0x4a2605796e0d91A9667d6E30365aEEC384C48c27`
 - **QualityOffice:** `0x2f2665D30DF1be87848cACb3185FCDe5D76F8ff7`
 - **Deployer / Fee Payer:** `0x9C8Fd044A4C777f9f97c6cFC127C91f86b795C9c`
