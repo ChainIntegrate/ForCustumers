@@ -221,3 +221,81 @@ This token represents the **first ten Birra20Venti purchases of 2026** and acts 
 Part of the **Birra20Venti on-chain loyalty and traceability system**.
 
 Infrastruttura di emissione: **ChainIntegrate**.
+
+# SupplierQualityLSP8 — Rev2 (Current / Canonical)
+
+## Contract
+
+- **Name:** `SupplierQualityLSP8_Rev2`
+- **Standard:** LSP8 Identifiable Digital Asset
+- **Source:** `contracts/SupplierQualityLSP8_Rev2.sol`
+- **Network:** LUKSO Mainnet
+- **Chain ID:** 42
+
+## Deployment (Mainnet)
+
+- **Contract:** `0x54492a659C8CbBf21c16Fb296f6AE72e6dC9F7fD`
+- **Deployed on:** 2026-03-02
+- **Owner (Universal Profile):** `0x4a2605796e0d91A9667d6E30365aEEC384C48c27`
+- **QualityOffice:** `0x2f2665D30DF1be87848cACb3185FCDe5D76F8ff7`
+- **Deployer / Fee Payer:** `0x9C8Fd044A4C777f9f97c6cFC127C91f86b795C9c`
+
+---
+
+## Scoring Model (Rev2)
+
+Weights (per mille — sum = 1000):
+
+- **Punctuality:** 400 (40%)
+- **Quality:** 300 (30%)
+- **Documentation:** 150 (15%)
+- **Reactivity:** 150 (15%)
+
+### Level → Points Mapping
+
+| Level      | Points |
+|------------|--------|
+| Unknown    | 0      |
+| Critical   | 250    |
+| Sufficient | 500    |
+| Good       | 750    |
+| Excellent  | 1000   |
+
+### Overall Formula
+overall = (p × 400 + q × 300 + d × 150 + r × 150) / 1000
+
+Scale: 0–1000
+
+
+# SupplierQualityLSP8 — Rev1 (Historical Version)
+
+## Contract
+
+- **Name:** `SupplierQualityLSP8`
+- **Standard:** LSP8 Identifiable Digital Asset
+- **Source:** `contracts/SupplierQualityLSP8.sol`
+- **Network:** LUKSO Mainnet
+
+## Deployment (Mainnet)
+
+- **Contract:** *(insert Rev1 address if retained)*
+- **Owner:** `0x4a2605796e0d91A9667d6E30365aEEC384C48c27`
+- **QualityOffice:** `0x2f2665D30DF1be87848cACb3185FCDe5D76F8ff7`
+- **Deployer / Fee Payer:** `0x9C8Fd044A4C777f9f97c6cFC127C91f86b795C9c`
+
+---
+
+## Scoring Model (Rev1)
+
+Weights (per mille — sum = 1000):
+
+- **Punctuality:** 300 (30%)
+- **Quality:** 400 (40%)
+- **Documentation:** 200 (20%)
+- **Reactivity:** 100 (10%)
+
+### Overall Formula
+overall = (p * 400 + q * 300 + d * 150 + r * 150) / 1000
+
+
+Scale: 0–1000

@@ -1,82 +1,141 @@
-# ForBirra20Venti
+# ChainIntegrate Smart Contracts
 
-**ForBirra20Venti** is the smart contract repository for the **Birra20Venti** project, developed within the **ChainIntegrate** ecosystem.
+This repository contains the production-grade Solidity smart contracts used within the **ChainIntegrate ecosystem**.
 
-It contains the on-chain logic that represents Birra20Venti’s production, certificates, loyalty and digital product identity on the **LUKSO blockchain**.
+It is not limited to a single project.  
+It supports multiple real-world clients across manufacturing, food production, supplier qualification, carbon certification and digital product identity.
 
-This is not experimental code: these contracts back real assets, real batches, and real customers.
-
----
-
-## What this repository contains
-
-This repo hosts the Solidity smart contracts used by Birra20Venti to tokenize and verify its real-world beer production.
-
-These contracts are used to manage:
-
-- Production batch NFTs (LSP8)  
-- Limited edition bottles  
-- Loyalty and badge tokens (LSP7)  
-- Compliance and quality certificates  
-- Revocations, superseding and historical tracking  
-
-All contracts follow the **LUKSO Universal Profile & LSP standards**, making them interoperable, identity-aware and future-proof.
+These contracts are deployed on the **LUKSO blockchain** and back real assets, real certificates and real operational workflows.
 
 ---
 
-## Core principles
+## Purpose
 
-The smart contracts in this repository are designed to make physical beer production:
+The goal of this repository is to provide:
 
-- Verifiable  
-- Traceable  
+- On-chain traceability infrastructure  
+- Verifiable production records  
+- Supplier evaluation frameworks  
+- Digital certificates  
+- Tokenized loyalty and identity systems  
+- Immutable audit trails  
+
+This is not experimental code.  
+It is designed for operational use in industrial and commercial environments.
+
+---
+
+## What This Repository Contains
+
+The repository includes smart contracts implementing:
+
+- **LSP8 NFTs** for uniquely identifiable real-world assets  
+  (production batches, supplier records, serialized items)
+
+- **LSP7 tokens** for non-divisible loyalty or certificate systems  
+
+- Supplier quality evaluation systems  
+- Production traceability frameworks  
+- Certification and compliance contracts  
+- Versioned and immutable governance models  
+
+All contracts follow **LUKSO Universal Profile and LSP standards**, ensuring:
+
+- Identity-aware execution  
+- Interoperability  
+- Long-term compatibility  
+- Decentralized ownership  
+
+---
+
+## Active Implementations
+
+This repository currently supports live deployments including:
+
+- Birra20Venti production batch NFTs  
+- Limited edition tokenized products  
+- Loyalty badge systems  
+- SupplierQualityLSP8 (supplier evaluation framework)  
+- Certificate and audit token models  
+
+Additional client implementations may be added over time.
+
+---
+
+## Design Principles
+
+The contracts in this repository are built around:
+
+- Deterministic token models  
+- Immutable scoring logic (versioned)  
+- Append-only evaluation history  
+- On-chain governance separation  
+- Auditability and industrial reliability  
+
+Whenever logic changes (e.g. scoring weights), a new contract version is deployed to preserve historical integrity.
+
+No silent updates.  
+No mutable business logic.
+
+---
+
+## Why Blockchain (Industrial Context)
+
+ChainIntegrate uses blockchain not for speculation, but for:
+
+- Proof of production  
+- Proof of quality  
+- Proof of compliance  
+- Supplier transparency  
+- Verifiable history  
+
+A batch, certificate or supplier record becomes:
+
+- Cryptographically verifiable  
 - Non-forgeable  
-- Publicly auditable  
+- Independently auditable  
 
-A bottle, a batch or a certificate is no longer just a record in a database, but an on-chain asset with cryptographic guarantees.
-
----
-
-## Why Birra20Venti uses blockchain
-
-Birra20Venti uses smart contracts not for speculation, but for **trust**.
-
-They allow:
-- customers to verify what they bought  
-- partners to verify what was produced  
-- and the brewery to prove its history  
-
-No centralized registry.  
-No editable PDFs.  
-No opaque systems.
-
-Only code and blockchain.
+without relying on a centralized database.
 
 ---
 
-## Part of ChainIntegrate
+## Network Deployment
 
-**ForBirra20Venti** is a production-grade deployment of the **ChainIntegrate** architecture, showing how a small real-world producer can adopt:
+Contracts are developed and tested on:
 
-- digital product passports  
-- on-chain certificates  
-- tokenized loyalty  
-- and verifiable supply chains  
+- **LUKSO Testnet** (development / staging)
+- **LUKSO Mainnet** (production)
 
-using LUKSO standards.
+Each deployment is documented in `deploy.md` with:
+
+- Contract address  
+- Version  
+- Governance roles  
+- Verification details  
 
 ---
 
-## Networks
+## Governance Model
 
-The contracts in this repository are deployed and tested on:
+The architecture typically separates:
 
-- LUKSO Testnet  
-- LUKSO Mainnet (production)
+- Owner (Universal Profile)  
+- Operational authority (e.g., QualityOffice)  
+- Fee payer / controller EOA  
+
+This ensures clean separation between governance and execution.
+
+---
+
+## Repository Scope
+
+This repository represents the **core smart contract layer** of ChainIntegrate.
+
+Frontend dashboards, monitoring services (Watchtower), and client-facing applications are maintained in separate repositories.
 
 ---
 
 ## License
 
-These smart contracts are part of the Birra20Venti and ChainIntegrate infrastructure.  
-Use, reuse and deployment should be evaluated case by case.
+These contracts are part of the ChainIntegrate infrastructure.  
+Use, reuse and deployment should be evaluated case by case depending on the client context.
